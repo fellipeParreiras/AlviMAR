@@ -46,7 +46,7 @@ SoftwareSerial bluetooth(bluetoothTXD, bluetoothRXD);
 Servo servoPescoco;
 U8GLIB_ST7920_128X64_1X u8g(OLED_ENABLE, OLED_RW, OLED_RS);
 
-// General variables
+// Variáveis globais
 const float velocidadeMaxima = 1; // Velocidade máxima do robô (a ser medida empíricamente) em m/s
 float velocidadeRobo = velocidadeMaxima; // Velocidade definida atual do robô
 const float velocidadeAngular = 0.01; // Velocidade angular máxima medida em º/s
@@ -736,7 +736,7 @@ const int temposDeEsperaegundoAndar [] = {
 
 // --------------------
 
-// ---------- Functions ----------
+// ---------- Funções ----------
 
 
 int toInt(float numero) {
